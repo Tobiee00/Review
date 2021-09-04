@@ -11,8 +11,10 @@ package giaiptbac2;
  */
 public class GiaiPTbac2 {
 
-    /**
-     * @param args the command line arguments
+    /**Giải phương trình bậc 2: ax2 +bx + c =0
+     * a : hệ số bậc 2
+     * b : hệ số bậc 1
+     * c : số hạng tự do
      */
   private float a;
   private float b;
@@ -30,6 +32,7 @@ public class GiaiPTbac2 {
         {
             nghiem="PT có nghiệm x="+(-b/a);
         }else{
+            
            float denta=b*b-4*a*c;
            if(denta>0)
            {
