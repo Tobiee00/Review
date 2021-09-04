@@ -18,6 +18,7 @@ public class PTbac2 extends javax.swing.JFrame {
      */
     public PTbac2() {
         initComponents();
+        //Giao diện background màu xám
         this.getContentPane().setBackground(Color.GRAY);
         setLocationRelativeTo(null);
     }
@@ -42,13 +43,13 @@ public class PTbac2 extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
+             //Tạo các trường nhập hệ số 
         jLabel1.setText("Hệ Số A:");
 
         jLabel2.setText("Hệ Số B:");
 
         jLabel3.setText("Hệ Số C:");
-
+             //Tạo button để tính nghiệm của phương trình bậc 2
         jButton1.setText("Tính");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -57,6 +58,7 @@ public class PTbac2 extends javax.swing.JFrame {
         });
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+            //Tiêu đề nội dung phương trình bậc 2
         jLabel4.setText("PHƯƠNG TRÌNH BẬC 2");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -113,7 +115,7 @@ public class PTbac2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        //Hiển thị kết quả
         GiaiPTbac2 p=new GiaiPTbac2(Float.parseFloat(jTextField1.getText()),Float.parseFloat(jTextField2.getText()),Float.parseFloat(jTextField3.getText()));
         nghiem.setText(p.giaiPT());
     }//GEN-LAST:event_jButton1ActionPerformed
